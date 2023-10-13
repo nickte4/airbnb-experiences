@@ -1,5 +1,46 @@
+.card {
+  width: 13rem;
+  font-size: 0.8rem;
+  margin-left: 4rem;
+}
+
 .card--image {
   width: 13rem;
   height: 18rem;
   border-radius: 15px;
+}
+
+.card--subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card--star {
+  padding-right: 5px;
+}
+
+.card--rating_and_reviews {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.card--rating {
+  padding-right: 2px;
+}
+
+.card--review_and_location {
+  opacity: 0.6;
+}
+
+.card--status {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  width: 4.5rem;
+  background-color: white;
+  top: 30px;
+  left: 10px;
 }
