@@ -1,0 +1,78 @@
+:root {
+  --clr-background: #ffff; /* insert background color */
+
+  /* current mode */
+  --clr-logo: var(--dark-background);
+  --clr-text: var(--dark-text);
+  --clr-primary: var(--light-primary);
+  --clr-secondary: var(--light-secondary);
+  --clr-accent: var(--light-accent);
+
+  /* light mode */
+  --light-text: #0f150f;
+  --light-background: #91b691;
+  --light-primary: #acc8ac;
+  --light-secondary: #c3d5c3;
+  --light-accent: #669966;
+
+  /* dark mode */
+  --dark-text: #eaf0ea;
+  --dark-background: #496e49;
+  --dark-primary: #375337;
+  --dark-secondary: #2a3c2a;
+  --dark-accent: #669966;
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: var(--clr-background);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+input::placeholder {
+  opacity: 0.3;
+}
+
+input:focus {
+  outline: 2px solid var(--clr-accent);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}

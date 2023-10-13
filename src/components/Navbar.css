@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  height: 6rem;
+  box-shadow: 0 4px 30px -15px gray;
+}
+
+.navbar--logo {
+  width: 7rem;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  height: 40%;
+}
