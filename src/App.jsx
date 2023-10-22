@@ -4,22 +4,24 @@ import Card from "./components/Card.jsx";
 import data from "./data.js";
 
 function App() {
+  const cards = data.map((item) => {
+    return (
+      <Card
+        image={item.coverImg}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        location={item.location}
+        title={item.title}
+        price={item.price}
+      />
+    );
+  });
+
   return (
     <>
       <Navbar />
       <Hero />
-      {data.map((item) => {
-        return (
-          <Card
-            image={item.coverImg}
-            rating={item.stats.rating}
-            reviewCount={item.stats.reviewCount}
-            location={item.location}
-            title={item.title}
-            price={item.price}
-          />
-        );
-      })}
+      <section className="cards--list">{cards}</section>
     </>
   );
 }

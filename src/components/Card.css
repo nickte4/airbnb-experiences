@@ -2,6 +2,7 @@
   width: 13rem;
   font-size: 0.8rem;
   margin-left: 4rem;
+  flex: 0 0 auto;
 }
 
 .card--image {
@@ -43,4 +44,11 @@
   background-color: white;
   top: 30px;
   left: 10px;
+}
+
+.cards--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.2rem;
+  overflow-x: auto;
 }
